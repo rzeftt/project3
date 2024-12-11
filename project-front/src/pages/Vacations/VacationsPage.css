@@ -1,0 +1,135 @@
+#out-of-vacations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15vh;
+}
+
+.vacations-list {
+    /* display: grid;
+    grid-template-columns: repeat(auto, auto);
+    gap: 20px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.vacation-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+    height: 550px;
+
+}
+
+
+.vacation-image-container {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.vacation-image {
+    width: 100%;
+    height: 300px;
+
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+.pagination {
+    align-items: center;
+    height: 50px;
+    margin: 0%
+}
+
+
+.pagination button {
+    margin: 0 5px;
+}
+
+.pagination button:disabled {
+    cursor: not-allowed;
+}
+
+.pagination .MuiButton-root {
+    min-width: 40px;
+}
+
+.image-overlay {
+    position: relative;
+}
+
+.overlay-icon {
+    position: absolute;
+    border-radius: 50%;
+    height: 300px;
+    /* הגובה של העיגול */
+    width: 300px;
+    /* הרוחב של העיגול */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-icon.edit-icon {
+    bottom: 230px;
+    /* מיקום האייקון של העריכה */
+    left: 50px;
+}
+
+.overlay-icon.delete-icon {
+    bottom: 180px;
+    /* מיקום האייקון של המחיקה (שורה מתחת) */
+    left: 50px;
+}
+
+
+.span-date {
+    background-color: #ebf8fb;
+    height: 40px;
+    font-weight: bold;
+    font-size: large;
+   
+}
+
+.price {
+    background-color: rgb(207, 207, 207);
+    width: 300px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 40px;
+    border-radius: 7px;
+    margin: 0 auto;
+    display: flex;
+    font-size: large;
+}
+.follow-section {
+    position: absolute;
+    height: 35px;
+    width: 130px;
+    bottom: 220px;
+    left: 35px;
+    background-color: #ebf8fb;
+    border-radius: 20px;
+    opacity: 95%;
+
+    /* Flexbox */
+    display: flex;
+    flex-direction: row; /* פריסה בשורה */
+    align-items: center; /* יישור אנכי למרכז */
+    justify-content: center; /* יישור אופקי */
+    gap: 5px; /* רווח בין האייקון לטקסט */
+    padding: 2px;
+}
+
+.followers-count {
+    margin-left: -10px; /* מזיז את הטקסט שמאלה */
+    font-size: 15px;
+}

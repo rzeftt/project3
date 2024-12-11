@@ -1,0 +1,62 @@
+.filter-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 50px;
+    width: 100%;
+}
+
+#left-group {
+    display: flex;
+    gap: 10px;
+    margin-left:13%;
+}
+
+#right-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-right:12%;
+}
+
+.filter-buttons .MuiIconButton-root {
+    background-color: transparent;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-right: 20px;
+}
+
+.filter-buttons .MuiIconButton-root:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.filter-buttons .MuiIconButton-root:active {
+    color: rgb(253, 185, 129);
+    /* צבע המילוי בעת לחיצה */
+}
+
+/* צבע הרקע של המספר בעיגול כאשר הוא נבחר */
+.MuiPaginationItem-root.Mui-selected {
+    background-color: rgb(253, 185, 129);
+    /* צבע כתום */
+    border-radius: 50%;
+    /* עיגול */
+    color: white;
+    /* צבע של המספר לבן */
+}
+
+/* צבע הרקע של המספר בעיגול כאשר לא נבחר, ושומר על עיגול */
+.MuiPaginationItem-root {
+    border-radius: 50%;
+    /* עיגול */
+    color: rgb(253, 185, 129);
+    /* צבע של המספר כתום */
+}
+
+/* שינוי צבע ה-hover כך שיישאר כתום ולא כחול */
+.MuiPaginationItem-root:hover {
+    background-color: rgb(253, 185, 129);
+    /* צבע ה-hover כתום */
+    color: white;
+    /* שינוי הצבע של המספר ל-white */
+}

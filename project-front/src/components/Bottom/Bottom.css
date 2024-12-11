@@ -1,0 +1,48 @@
+.bottom-nav {
+    height:5vh;
+    background-color: #f5fcfd;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+    opacity: 90%;
+    margin-left: 4%;
+   
+}
+
+div {
+    width: 100%;
+}
+
+.rotate-left,
+.rotate-right {
+    font-size: 60px;
+    /* גודל האייקון */
+    margin-left: 100px;
+}
+
+/* הזזת החיצים שמאלה */
+.rotate-left {
+    transform: rotate(-90deg);
+    /* סיבוב של 90 מעלות לכיוון ימין */
+
+}
+
+.rotate-right {
+    transform: rotate(90deg);
+    /* סיבוב של 90 מעלות לכיוון שמאל */
+
+}
+
+.span-bottom {
+    color: #f6bb62;
+    position: absolute;
+    /* ממקם את הכיתוב בצורה מוחלטת */
+    left: 50px;
+    /* מיישר את הכיתוב לצד שמאל */
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+

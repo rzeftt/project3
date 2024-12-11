@@ -1,0 +1,56 @@
+.containerLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center; /* מרכז את הטקסט */
+}
+
+.cardLogin {
+    max-width: 400px;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* מרכז את כל האלמנטים הפנימיים */
+    margin-top: 10%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.MuiTextField-root {
+    margin-bottom: 16px;
+}
+
+.register {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.MuiButton-root {
+    margin-top: 16px;
+}
+
+
+.errorMessage {
+    position: fixed;
+    bottom: 120px;
+    left: 13%;
+    transform: translateX(-50%);
+    background-color: rgb(255, 255, 255);
+    color: #f6bb62;
+    padding: 15px 30px; /* הגדלתי את המרווחים */
+    border-radius: 10px;
+    font-size: 18px; /* הגדלתי את הגודל */
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: auto;
+    max-width: 400px; /* הרחבתי את הרוחב המקסימלי */
+    transition: opacity 0.3s ease, bottom 0.3s ease;
+}
+.login-link{
+    color: rgb(179, 179, 179);
+}

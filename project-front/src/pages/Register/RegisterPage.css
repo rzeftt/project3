@@ -1,0 +1,36 @@
+.containerRegister {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center; /* מרכז את הטקסט */
+}
+
+.cardRegister {
+    max-width: 400px;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* מרכז את כל האלמנטים הפנימיים */
+    margin-top: 6%;
+}
+
+
+input, .MuiButton-root {
+    margin-bottom: 1rem; /* רווח בין האינפוטים */
+}
+/* אם אתה משתמש ב-input רגיל */
+input {
+    background-color: transparent; /* מבטל את הרקע הכחול */
+    border: 1px solid #ccc; /* צבע מסגרת רגיל */
+    outline: none; /* מבטל את הצבע הכחול כאשר האינפוט בפוקוס */
+    padding: 0.8rem;
+    width: 100%;
+    border-radius: 5px; /* רדיוס פינות */
+}
+
+
+.register-link{
+    color: rgb(179, 179, 179);
+}

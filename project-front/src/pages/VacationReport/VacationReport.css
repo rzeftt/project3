@@ -1,0 +1,45 @@
+/* VacationReport.css */
+
+/* עיצוב העמוד הראשי */
+.vacation-report-container {
+    display: flex;
+    flex-direction: column; /* סידור בעמודה */
+    align-items: center;
+    justify-content: flex-start; /* יש להניח את כל התוכן למעלה */
+    min-height: 100vh; /* תופס את כל הגובה של המסך */
+    padding: 20px;
+}
+
+/* עיצוב קונטיינר הגרף */
+.chart-container {
+    height: 600px; /* גובה מוגדל */
+    width: 1400px; /* רוחב מוגדל */
+    border-radius: 10px; /* קצוות מעוגלים */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* הוספת צל */
+    padding: 20px; /* רווח פנימי */
+    margin-top: 20px; /* רווח בין הגרף לכפתור */
+}
+
+/* עיצוב כפתור ההורדה */
+.download-button {
+    margin-top: 30px;
+    border: 1px solid #f6bb62;
+    color: rgb(200, 200, 200);
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 20px; /* רווח בין הכפתור לגרף */
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center; 
+    background-color: white
+}
+
+
+/* עיצוב לאייקון חץ למטה */
+.download-button i {
+    font-size: 20px; /* גודל האייקון */
+}
