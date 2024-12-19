@@ -23,9 +23,10 @@ server.use(catchAll);
 
 // Start Server
 try {
-    server.listen(appConfig.port, () => {
-        console.log(`Listening on http://localhost:${appConfig.port}`);
-    });
+  server.listen(appConfig.port, '0.0.0.0', () => {
+    console.log(Listening on http://0.0.0.0:${appConfig.port});
+});
+
 } catch (error) {
     console.error('Failed to start server:', error);
 }
