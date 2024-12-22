@@ -5,7 +5,7 @@ class AppConfig {
        host: 'freedom-db.c56gwmwoeix6.us-east-1.rds.amazonaws.com',
         port: 3306,
         password: 'rzf1024+_',
-        database: 'freedom-be',
+        database: 'freedom-db',
     };
 }
 
