@@ -24,7 +24,8 @@ server.use(catchAll);
 // Start Server
 try {
   server.listen(appConfig.port, '0.0.0.0', () => {
-    console.log(Listening on http://0.0.0.0:${appConfig.port});
+   console.log(`Listening on http://0.0.0.0:${appConfig.port}`);
+
 });
 
 } catch (error) {
