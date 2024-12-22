@@ -2,10 +2,10 @@ class AppConfig {
     readonly port: number = 4091;
     readonly dbConfig = {
         user: 'root',
-       host: '54.234.99.29',
+       host: 'freedom-db.c56gwmwoeix6.us-east-1.rds.amazonaws.com',
         port: 3306,
-        password: '',
-        database: 'freedom',
+        password: 'rzf1024+_',
+        database: 'freedom-be',
     };
 }
 
