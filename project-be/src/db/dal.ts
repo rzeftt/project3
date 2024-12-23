@@ -1,4 +1,5 @@
-import mysql from 'mysql2/promise';
+const mysql = require('mysql2');  // זה אם אתה משתמש ב- mysql2
+
 import { appConfig } from '../utils/appConfig';
 import winston from 'winston';
 
