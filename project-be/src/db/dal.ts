@@ -1,10 +1,9 @@
-const mysql = require('mysql2');  // זה אם אתה משתמש ב- mysql2
-
-import { appConfig } from '../utils/appConfig';
-import winston from 'winston';
+const mysql = require('mysql2');  // עבודה עם require
+const { appConfig } = require('../utils/appConfig');
+const winston = require('winston');
 
 // יצירת בריכת חיבורים עם הגדרות נוספות
-export const pool = mysql.createPool({
+const pool = mysql.createPool({
     user: appConfig.dbConfig.user,
     host: appConfig.dbConfig.host,
     port: appConfig.dbConfig.port,
@@ -14,6 +13,9 @@ export const pool = mysql.createPool({
     connectionLimit: 10,       // מספר מקסימלי של חיבורים בבריכה
     queueLimit: 0              // מספר בלתי מוגבל של בקשות בתור (או להגדיר גבול אם יש צורך)
 });
+
+module.exports = { pool };
+
 
 // הגדרת יומן שגיאות
 const logger = winston.createLogger({
