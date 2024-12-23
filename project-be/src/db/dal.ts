@@ -3,7 +3,7 @@ const { appConfig } = require('../utils/appConfig');
 const winston = require('winston');
 
 // יצירת בריכת חיבורים עם הגדרות נוספות
-const pool = mysql.createPool({
+ export const pool = mysql.createPool({
     user: appConfig.dbConfig.user,
     host: appConfig.dbConfig.host,
     port: appConfig.dbConfig.port,
@@ -14,7 +14,6 @@ const pool = mysql.createPool({
     queueLimit: 0              // מספר בלתי מוגבל של בקשות בתור (או להגדיר גבול אם יש צורך)
 });
 
-module.exports = { pool };
 
 
 // הגדרת יומן שגיאות
