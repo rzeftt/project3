@@ -23,8 +23,8 @@ server.use(catchAll);
 
 // Start Server
 try {
-  server.listen(4091, '0.0.0.0', () => {
-   console.log(`Listening on http://0.0.0.0:4091`);
+  server.listen(4091,  () => {
+   console.log(`Listening on http://localhost:4091`);
 
 });
 
